@@ -4,6 +4,9 @@ int main(){
 	int canhB = 0;
 	int canhC = 0;
 	
+	int chuvi = 0;
+	
+	// https://github.com/thienth/PT15302-UD-com108
 	printf("Tinh chu vi tam giac\n");
 	printf("====================\n");
 	
@@ -20,6 +23,8 @@ int main(){
 	scanf("%d", &canhC);
 	
 	printf("\n3 canh tam giac: %d - %d - %d", canhA, canhB, canhC);
-	
+
+	chuvi = canhA + canhB + canhC;
+	printf("\nChu vi tam giac = %d", chuvi);
 	return 0;
 }
