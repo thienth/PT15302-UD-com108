@@ -22,26 +22,33 @@ void baitap2(){
     scanf("%d", &y);
     printf("hiển thị kết quả\n");
 }
-void menu(){
-    int baitap;
-    printf("Hiển thị bài tập (1-5):\n");
-    scanf("%d", &baitap);
-    switch (baitap) {
-        case 1:
-            baitap1();
-            break;
-        case 2:
-            baitap2();
-            break;
-            
-        default:
-            break;
-    }
-    
+void baitap3(){
+    printf("Chương trình tính tiền cho quán Karaoke\n");
+    printf("Giá tiền 3 giờ đầu là 150000, bắt đầu giờ thứ 4 giảm 30%\n");
+    printf("Quán chỉ hoạt động trong khoảng giờ từ 12 giờ đến 23 giờ\n");
+    printf(" giờ bắt đầu trong khoảng 14h đến 17h thì giảm tiếp 10% tổng tiền thanh toán\n");
 }
+
 int main(){
-    menu();
-    
+    int baitap;
+    do {
+        printf("Hiển thị bài tập (1-5):\n");
+        scanf("%d", &baitap);
+        switch (baitap) {
+            case 1:
+                baitap1();
+                break;
+            case 2:
+                baitap2();
+                break;
+            case 3:
+                baitap3();
+                break;
+                
+            default:
+                break;
+        }
+    } while (baitap < 6 && baitap > 0);
     
     return 0;
 }
