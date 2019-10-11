@@ -48,6 +48,7 @@ void baitap5(){
     printf("Mệnh giá tiền gồm có: 500,200,100,50,20,10,5,2,1\n");
 }
 int main(){
+
     int baitap;
     do {
         printf("Hiển thị bài tập (1-5):\n");
